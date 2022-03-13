@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel.co</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <style>
+      body {
+        background: rgba(222, 255, 246, 1);
+        background: -moz-linear-gradient(
+          top,
+          rgba(222, 255, 246, 1) 0%,
+          rgba(163, 241, 217, 1) 100%
+        );
+        background: -webkit-gradient(
+          left top,
+          left bottom,
+          color-stop(0%, rgba(222, 255, 246, 1)),
+          color-stop(100%, rgba(163, 241, 217, 1))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(222, 255, 246, 1) 0%,
+          rgba(163, 241, 217, 1) 100%
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(222, 255, 246, 1) 0%,
+          rgba(163, 241, 217, 1) 100%
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(222, 255, 246, 1) 0%,
+          rgba(163, 241, 217, 1) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(222, 255, 246, 1) 0%,
+          rgba(163, 241, 217, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#defff6', endColorstr='#a3f1d9', GradientType=0 );
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .myButton {
+        background-color: #1ec38c;
+        border-radius: 28px;
+        border: 1px solid #1ec38c;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px 45px;
+        text-decoration: none;
+      }
+      .myButton:hover {
+        background-color: #1ec38c;
+      }
+      .myButton:active {
+        position: relative;
+        top: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #a7f2d9"
+    >
+      <div class="container-sm">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/image/icon-travel.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          TravelAja
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex">
+          <button class="btn" type="button">Login</button>
+          <button class="btn myButton ms-3" type="button">Sign Up</button>
+        </form>
+      </div>
+    </nav>
+
+    <!--Main content-->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-4 my-5 align-self-center">
+          <h1 class="fs-1">Beautiful one day, perfect the next</h1>
+          <p class="fs-4">
+            we always try to make our client happy by giving many choice
+          </p>
+          <button class="btn myButton mt-3" type="button" style="width: 200px;">Let's Start</button>
+        </div>
+        <div class="col-8">
+          <img src="assets/image/Traveler.png" alt="traveler" width="1000rem" />
+        </div>
+      </div>
+    </div>
+
+    <!--Footers-->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-4 offset-1">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn myButton" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-dark" href="#"></a>
+                  <svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter" /></svg></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                  <svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" /></svg></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                  <svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook" /></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
