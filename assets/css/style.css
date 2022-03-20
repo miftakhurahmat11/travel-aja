@@ -1,0 +1,109 @@
+body {
+  background: rgba(222, 255, 246, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(222, 255, 246, 1) 0%,
+    rgba(163, 241, 217, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(222, 255, 246, 1)),
+    color-stop(100%, rgba(163, 241, 217, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(222, 255, 246, 1) 0%,
+    rgba(163, 241, 217, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(222, 255, 246, 1) 0%,
+    rgba(163, 241, 217, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(222, 255, 246, 1) 0%,
+    rgba(163, 241, 217, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(222, 255, 246, 1) 0%,
+    rgba(163, 241, 217, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#defff6', endColorstr='#a3f1d9', GradientType=0 );
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.myButton {
+  background-color: #1ec38c;
+  border-radius: 28px;
+  border: 1px solid #1ec38c;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px 45px;
+  text-decoration: none;
+}
+
+.btn-search, .btn-subs{
+  background-color: #1ec38c;
+  border-radius: 10px;
+  border: 1px solid #1ec38c;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px 35px;
+  text-decoration: none;
+}
+
+.btn-article{
+  border-radius: 10px;
+  border: 1px solid #1ec38c;
+  display: inline-block;
+  cursor: pointer;
+  color: #1ec38c;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.myButton:hover, .btn-search:hover {
+  background-color: #1ec38c;
+}
+.myButton:active, .btn-search:active {
+  position: relative;
+  top: 1px;
+}
+
+.bg-glass{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg-cards:hover{
+  background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.bg-cards{
+  background-color: rgba(222, 255, 246, 0);
+}
+
+h4{
+  font-weight: lighter;
+}

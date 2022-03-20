@@ -4,71 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel.co</title>
+    <title>Travel.id</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <style>
-      body {
-        background: rgba(222, 255, 246, 1);
-        background: -moz-linear-gradient(
-          top,
-          rgba(222, 255, 246, 1) 0%,
-          rgba(163, 241, 217, 1) 100%
-        );
-        background: -webkit-gradient(
-          left top,
-          left bottom,
-          color-stop(0%, rgba(222, 255, 246, 1)),
-          color-stop(100%, rgba(163, 241, 217, 1))
-        );
-        background: -webkit-linear-gradient(
-          top,
-          rgba(222, 255, 246, 1) 0%,
-          rgba(163, 241, 217, 1) 100%
-        );
-        background: -o-linear-gradient(
-          top,
-          rgba(222, 255, 246, 1) 0%,
-          rgba(163, 241, 217, 1) 100%
-        );
-        background: -ms-linear-gradient(
-          top,
-          rgba(222, 255, 246, 1) 0%,
-          rgba(163, 241, 217, 1) 100%
-        );
-        background: linear-gradient(
-          to bottom,
-          rgba(222, 255, 246, 1) 0%,
-          rgba(163, 241, 217, 1) 100%
-        );
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#defff6', endColorstr='#a3f1d9', GradientType=0 );
-      }
-
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-
-      .myButton {
-        background-color: #1ec38c;
-        border-radius: 28px;
-        border: 1px solid #1ec38c;
-        display: inline-block;
-        cursor: pointer;
-        color: #ffffff;
-        font-family: Arial;
-        font-size: 17px;
-        padding: 8px 45px;
-        text-decoration: none;
-      }
-      .myButton:hover {
-        background-color: #1ec38c;
-      }
-      .myButton:active {
-        position: relative;
-        top: 1px;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <!--Navbar-->
@@ -107,146 +45,199 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link " href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
         <form class="d-flex">
-          <button class="btn" type="button">Login</button>
-          <button class="btn myButton ms-3" type="button">Sign Up</button>
+          <button class="btn" type="button">Masuk</button>
+          <button class="btn myButton ms-3" type="button">Daftar</button>
         </form>
       </div>
     </nav>
-
+    
     <!--Main content-->
+    <h3 class="user-name m-3"></h3>
+    <h4 class="m-3">Ayoo hilangkan penat dengan liburan bersama kami...</h4>
     <div class="container">
       <div class="row mt-5">
-        <div class="col-4 my-5 align-self-center">
-          <h1 class="fs-1">Beautiful one day, perfect the next</h1>
-          <p class="fs-4">
-            we always try to make our client happy by giving many choice
+        <div class="col-5 mt-3 align-self-center">
+          <h1 class="fs-1 fs-5">Satu Hari yang Indah, Menyempurkan hari selanjutnya</h1>
+          <p class="fs-4 fs-6">
+            Kami selalu ingin pelanggan kami senang dengan pilihan yang terbaik
           </p>
-          <button class="btn myButton mt-3" type="button" style="width: 200px;">Let's Start</button>
+          <button class="btn myButton mt-3" type="button" style="width: 200px;">Mulai</button>
         </div>
-        <div class="col-8">
-          <img src="assets/image/Traveler.png" alt="traveler" width="1000rem" />
+        <div class="col-7">
+          <img src="assets/image/Traveler.png" class="img-fluid" alt="traveler" />
         </div>
       </div>
     </div>
 
+    <!--Fitures-->
+    <h2 class="fs-1 d-flex justify-content-center my-3">Berbagai Fitur Unggulan Dari Kami</h2>
+    <div id="Fitures" class="d-flex justify-content-evenly container-sm container-lg container-xl bg-glass my-4">
+        <div class="row px-3 justify-content-evenly">
+          <div id="hotels" class="card border-light col-3 my-3 bg-cards" style="width: 18rem; max-width: fit-content;">
+            <img src="assets/image/fiture-icons/hotels.png" class="img-fluid" class="card-img-top" alt="icon-hotels">
+            <div class="card-body">
+              <h5 class="card-title text-center">Penginapan</h5>
+            </div>
+          </div>
+          <div id="flights" class="card border-light col-3 my-3 bg-cards" style="width: 18rem; max-width: fit-content;">
+            <img src="assets/image/fiture-icons/flights.png" class="img-fluid" class="card-img-top" alt="icon-hotels">
+            <div class="card-body">
+              <h5 class="card-title text-center">Penerbangan</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row px-3 justify-content-evenly">
+          <div id="trains" class="card border-light col-3 my-3 bg-cards" style="width: 18rem; max-width: fit-content;">
+            <img src="assets/image/fiture-icons/trains.png" class="img-fluid" class="card-img-top" alt="icon-hotels">
+            <div class="card-body">
+              <h5 class="card-title text-center">Kereta_______</h5>
+            </div>
+          </div>
+          <div id="taxi" class="card border-light col-3 my-3 bg-cards" style="width: 18rem; max-width: fit-content;">
+            <img src="assets/image/fiture-icons/taxi.png" class="img-fluid" class="card-img-top" alt="icon-hotels">
+            <div class="card-body">
+              <h5 class="card-title text-center">Perjalanan__</h5>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--Most Places visited-->
+    <h2 class="fs-1 d-flex justify-content-center mb-3 mt-5">Paling banyak dikunjungi</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/image/carousel-images/kembang-soka.jpg" class="d-block w-100" alt="kembang soka waterfall, Photo by Koes nadi">
+          <div class="carousel-caption d-md-block text-start">
+            <h5>Air Terjun Kembang Soka</h5>
+            <p>Kulon Progo, Yogyakarta</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/image/carousel-images/bromo.jpg" class="d-block w-100" alt="Mount Bromo, Photo by Nanda Firdaus ">
+          <div class="carousel-caption d-md-block text-start">
+            <h5>Gunung Bromo</h5>
+            <p>Probolinggo, Jawa Timur</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/image/carousel-images/ranca-upas.jpg" class="d-block w-100" alt="Ranca Upas, Photo by Zalfa Imani">
+          <div class="carousel-caption d-md-block text-start">
+            <h5>Ranca Upas</h5>
+            <p>Bandung, Jawa Barat</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!--Footers-->
-    <div class="container">
+    <div class="container-fluid">
       <footer class="py-5">
         <div class="row">
-          <div class="col-2">
-            <h5>Section</h5>
+          <div class="col-6">
+            <h5>Perusahaan</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Home</a>
+                <a href="#" class="nav-link p-0 text-muted">Tentang</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Features</a>
+                <a href="#" class="nav-link p-0 text-muted">Blog</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">About</a>
+                <a href="#" class="nav-link p-0 text-muted">Biaya</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-2">
-            <h5>Section</h5>
+          <div class="col-6">
+            <h5>Perjalanan</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Home</a>
+                <a href="#" class="nav-link p-0 text-muted">Liburan</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Features</a>
+                <a href="#" class="nav-link p-0 text-muted">Wisata</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+                <a href="#" class="nav-link p-0 text-muted">Penginapan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h5>Hubungi Kami</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Bantuan</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">About</a>
+                <a href="#" class="nav-link p-0 text-muted">Kontak</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-2">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Features</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">About</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-4 offset-1">
+          <div class="col-6">
             <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
-              <div class="d-flex w-100 gap-2">
+              <h5>Langganan</h5>
+              <p>Dengan berlangganan anda akan mendapatkan Informasi dan Promo Terkini dari kami</p>
+              <div class="email">
                 <label for="newsletter1" class="visually-hidden"
-                  >Email address</label
+                  >Alamat Email</label
                 >
                 <input
                   id="newsletter1"
                   type="text"
                   class="form-control"
-                  placeholder="Email address"
+                  placeholder="Alamat Email"
+                  width="100rem"
                 />
-                <button class="btn myButton" type="button">Subscribe</button>
+                <button class="btn btn-subs my-2" type="button">Langganan</button>
               </div>
             </form>
           </div>
         </div>
+          
 
         <div class="d-flex justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+          <p>&copy; 2022 Miftah, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3">
-              <a class="link-dark" href="#"></a>
-                  <svg class="bi" width="24" height="24">
-                  <use xlink:href="#twitter" /></svg></a>
+              <a class="link-dark" href="#">
+                <img width="24" height="24" src="assets/image/soc-med-images/twitter.png" alt="">
+              </a>
             </li>
             <li class="ms-3">
               <a class="link-dark" href="#">
-                  <svg class="bi" width="24" height="24">
-                  <use xlink:href="#instagram" /></svg></a>
+                <img width="24" height="24" src="assets/image/soc-med-images/instagram.png" alt="">
+              </a>
             </li>
             <li class="ms-3">
               <a class="link-dark" href="#">
-                  <svg class="bi" width="24" height="24">
-                  <use xlink:href="#facebook" /></svg>
+                <img width="24" height="24" src="assets/image/soc-med-images/facebook.png" alt="">
               </a>
             </li>
           </ul>
@@ -254,6 +245,6 @@
       </footer>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
